@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Open Library</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Open Library</h1>
+        <p>Please enter the ISBN of the book you'd like to retrieve</p>
+        <div class="form-group row">
+            <label for="ISBN" class="col-sm-2 col-form-label">ISBN</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="isbn" placeholder="#" required>
+            </div>
+            <div class="col-sm-6">
+              <button type="submit" id="search" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+      </div>
+      <div class="flex-container" id="book"></div>
+    </div>
+  </body>
+</html>
